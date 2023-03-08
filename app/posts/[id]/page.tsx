@@ -13,7 +13,6 @@ type URL = {
 };
 
 export default function PostDetail(url: URL) {
-  debugger
   const { data, isLoading } = useGetPostById(url.params.id);
   if (isLoading) return 'Loading';
 

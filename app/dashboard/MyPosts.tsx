@@ -7,7 +7,7 @@ import { useGetPostsByUser } from '../hooks/posts'
 export default function MyPosts(): JSX.Element {
   const { data, isLoading } = useGetPostsByUser()
     if (isLoading) return <h1>Posts are loading...</h1>
-    if (data) console.log(data)
+    
   return (
     <div>
       {data?.Post?.map((post) => (

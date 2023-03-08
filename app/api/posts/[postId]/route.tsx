@@ -8,7 +8,7 @@ type Props = {
 export async function GET(request: Request, {params}: {params: Props}) {
 
   const {postId} = params
-  console.log(postId)
+
   try {
     const data = await prisma.post.findUnique({
       where: {
